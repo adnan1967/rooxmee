@@ -1,0 +1,11 @@
+<article class="artworklist">
+  <h1>Artwork on display</h1>
+  <p>While you attentd the conference, head to our gallery where you can check out some of the work from our speakers,</p>
+  <div class="pixgrid">
+    <% if (artwork.length > 0) {  let i = 0; %>
+      <%  for(let item of artwork) { i++; %>
+        <img src="/images/artwork/<%= item %>" alt="artwork <%= i %>">
+      <% } %>
+    <%}%>
+  </div>
+</article>
